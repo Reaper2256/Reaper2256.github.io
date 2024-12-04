@@ -1,0 +1,78 @@
+<DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Feedback Form</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Gerald Phua Jun Heng">
+    <meta name="description" content="Feedback Form">
+    <meta name="keywords" content="feedback, comments, suggestions">
+
+	<link rel="stylesheet" type="text/css" href="mainstyle.css">
+	
+</head>
+
+<body>
+    <header>
+        <h1>Feedback Form</h1>
+        <hr>
+    </header>
+
+    <div class="container">
+        <form action="mailto:Lucky@gmail.com" method="get" enctype="text/plain">
+            <fieldset>
+                <legend>Your Feedback</legend>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="e.g., example@mail.com" required>
+
+                <label>Feedback Type:</label>
+                <input type="radio" id="comment" name="feedbackType" value="Comment" required>
+                <label for="comment">Comment</label>
+                <input type="radio" id="featureRequest" name="feedbackType" value="Feature Request">
+                <label for="featureRequest">Feature Request</label>
+                <input type="radio" id="bugReports" name="feedbackType" value="Bug Report">
+                <label for="bugReports">Bug Report</label>
+                <input type="radio" id="questions" name="feedbackType" value="Question">
+                <label for="questions">Question</label>
+
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" rows="5" placeholder="Write your feedback here..."></textarea>
+
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating">
+                    <option value="4">Good</option>
+                    <option value="3">Average</option>
+                    <option value="2">Poor</option>    
+                </select>
+
+                <label for="submit-date">Submit Date:</label>
+                <input type="date" id="submit-date" name="submit-date" required>
+
+                <label for="submit-time">Submit Time:</label>
+                <input type="time" id="submit-time" name="submit-time" required>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </fieldset>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy Lucky | Last updated: 23/11/2024</p>
+    </footer>
+</body>
+
+</html>
